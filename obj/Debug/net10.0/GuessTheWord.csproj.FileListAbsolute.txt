@@ -1,0 +1,14 @@
+/Users/saniyahsmith/GuessTheWord/bin/Debug/net10.0/GuessTheWord
+/Users/saniyahsmith/GuessTheWord/bin/Debug/net10.0/GuessTheWord.deps.json
+/Users/saniyahsmith/GuessTheWord/bin/Debug/net10.0/GuessTheWord.runtimeconfig.json
+/Users/saniyahsmith/GuessTheWord/bin/Debug/net10.0/GuessTheWord.dll
+/Users/saniyahsmith/GuessTheWord/bin/Debug/net10.0/GuessTheWord.pdb
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.GeneratedMSBuildEditorConfig.editorconfig
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.AssemblyInfoInputs.cache
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.AssemblyInfo.cs
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.csproj.CoreCompileInputs.cache
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.dll
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/refint/GuessTheWord.dll
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.pdb
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.genruntimeconfig.cache
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/ref/GuessTheWord.dll
