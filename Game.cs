@@ -41,6 +41,10 @@ class Game
                     guessedChars.Add(guessedChar);
                     Console.WriteLine("The letter is in the word");
                 }
+                if (!chars.Contains(guessedChar))
+                {
+                    Console.WriteLine("The letter is not in the word");
+                }
 
                 else if (string.IsNullOrWhiteSpace(letter) || letter.Length != 1)
                 {
@@ -49,6 +53,7 @@ class Game
                     i--;
                     continue;
                 }
+
                 bool isInt = int.TryParse(letter, out int intLetter);
 
                 if (isInt)
@@ -57,6 +62,12 @@ class Game
                     Console.WriteLine("Enter a single letter next time");
                     i--;
                     continue;
+                }
+
+                if (chars.Count == guessedChars.Count)
+                {
+                    Console.WriteLine($"\nYou guessed the correct word: {string.Join("", chars)}");
+                    isCorrectWord = true;
                 }
             }
         }
