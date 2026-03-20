@@ -2,14 +2,12 @@ using System;
 
 class Game
 {
-    static bool isCorrectLetter = false;
     static bool isCorrectWord = false;
     // static string? correctWord = "";
     static List<string> words = new List<string> { "dog", "cat", "house", "boat" };
     static List<string> word = new List<string> { };
     static List<char> chars = new List<char> { };
     static List<char> guessedChars = new List<char> { };
-
 
     public static void Run(string[] args)
     {
@@ -31,17 +29,34 @@ class Game
 
         do
         {
-            Console.WriteLine("Guess a letter");
-            string? letter = Console.ReadLine();
-            char[]? guessedChar = letter?.ToCharArray();
-
-            for (int i = 0; i < guessedChar?.Length; i++)
+            for (int i = 0; i < chars.Count; i++)
             {
-                guessedChars.Add(guessedChar[i]);
-                if (chars.Contains(guessedChars[i]))
+                Console.WriteLine("Enter a letter:");
+                string? letter = Console.ReadLine();
+
+                char guessedChar = letter[0];
+
+                if (chars.Contains(guessedChar))
                 {
-                    isCorrectLetter = true;
-                    Console.WriteLine("This letter is in the word");
+                    guessedChars.Add(guessedChar);
+                    Console.WriteLine("The letter is in the word");
+                }
+
+                else if (string.IsNullOrWhiteSpace(letter) || letter.Length != 1)
+                {
+                    Console.WriteLine("The value entered contains either a whitespace or the input is the wrong length");
+                    Console.WriteLine("Enter a single letter next time");
+                    i--;
+                    continue;
+                }
+                bool isInt = int.TryParse(letter, out int intLetter);
+
+                if (isInt)
+                {
+                    Console.WriteLine("The value entered was a number, which is invalid ");
+                    Console.WriteLine("Enter a single letter next time");
+                    i--;
+                    continue;
                 }
             }
         }

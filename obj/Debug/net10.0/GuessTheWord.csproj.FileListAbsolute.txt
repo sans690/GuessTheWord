@@ -12,3 +12,4 @@
 /Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.pdb
 /Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.genruntimeconfig.cache
 /Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/ref/GuessTheWord.dll
+/Users/saniyahsmith/GuessTheWord/obj/Debug/net10.0/GuessTheWord.sourcelink.json
